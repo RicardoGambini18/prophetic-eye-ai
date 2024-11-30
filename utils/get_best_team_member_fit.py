@@ -5,7 +5,7 @@ from utils.openai_client import openai_client
 def format_team_members(team_members):
   formatted_string = []
 
-  for team_member in team_members:
+  for index, team_member in enumerate(team_members):
     experience_units = team_member["experience_units"]
     experience_str = []
     for experience_unit in experience_units:
@@ -15,6 +15,7 @@ def format_team_members(team_members):
       )
 
     formatted_string.append(
+        f"ID: {index}\n"
         f"Name: {team_member['name']}\n"
         f"English Level: {team_member['english']}\n"
         f"Seniority: {team_member['seniority']}\n"
@@ -86,4 +87,9 @@ def get_best_team_member_fit(client_requirements: str, team_members: list):
 
   response = chat_completion.choices[0].message.content
   team_member_recommendation = json.loads(response)
-  return team_member_recommendation
+  selected_team_member_id = team_member_recommendation["selected_team_member_id"]
+  selected_team_member = team_members[int(selected_team_member_id)]
+  selected_team_member["reason"] = team_member_recommendation["reason"]
+  del selected_team_member["experience_units"]
+  del selected_team_member["score"]
+  return selected_team_member
