@@ -12,6 +12,7 @@ from controllers.generate_requirement_units import generate_requirement_units
 from controllers.get_team_members import get_team_members
 from controllers.get_projects import get_projects
 from controllers.get_team_member_experience_units import get_team_member_experience_units
+from controllers.get_team_member_recommendation import get_team_member_recommendation
 
 load_dotenv()
 
@@ -72,6 +73,11 @@ def get_projects_controller():
 @app.get("/api/get-team-member-experience-units")
 def get_team_member_experience_units_controller():
   return get_team_member_experience_units()
+
+
+@app.get("/api/get-team-member-recommendation")
+def get_team_member_recommendation_controller():
+  return get_team_member_recommendation()
 
 
 if __name__ == '__main__':
