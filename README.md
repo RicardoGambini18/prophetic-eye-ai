@@ -7,7 +7,7 @@
 
   - [About Prophetic Eye](#about-prophetic-eye)
   - [How to run it?](#how-to-run-it)
-  - [What is happening behind?](#what-is-happening-behind?)
+  - [What is happening behind?](#what-is-happening-behind)
   - [Built in](#built-in)
 </details>
 
@@ -34,7 +34,7 @@
 ```
 
 
-# <ins>What is happening behind?</ins>
+# <ins>What is happening behind</ins>
 
 The project involves gathering information about the client, specifically about their project. Then, a Ravn team member will fill out a short form where they can add one or multiple projects, providing descriptions of what they did and used in those projects, including the technologies, their level of English, their background, and their communication skills.
 
