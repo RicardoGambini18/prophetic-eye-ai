@@ -21,7 +21,7 @@
 - Must to python installed
 - Must create virtual environment:
 ```shell
-  python -m venv env
+  python -m venv venv
 ```
 - Install dependencies running:
 ```shell
@@ -30,7 +30,7 @@
 - Replace .env.example by .env and set your own key
 - Run the server:
 ```shell
-  python app.py
+  python -m app
 ```
 
 
@@ -38,10 +38,11 @@
 
 The project involves gathering information about the client, specifically about their project. Then, a Ravn team member will fill out a short form where they can add one or multiple projects, providing descriptions of what they did and used in those projects, including the technologies, their level of English, their background, and their communication skills.
 
-This data is sent to the backend, where pre-trained AI analyzes it to determine which team member is best suited to participate in the project and why. The AI presents a carefully selected top list based on performance and technical compatibility, allowing the partner to quickly choose the right person for the job.
+This data is sent to the backend, where we have utilized OpenAI’s service for data mapping. This allows for a detailed analysis of which team member is best suited to participate in the project and why. A carefully selected top list is presented based on performance and technical compatibility, enabling the partner to quickly choose the right person for the job.
 
 # <ins>Built in:</ins>
 
 <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="70" height="70">
 <img src="https://img.icons8.com/?size=100&id=ka3InxFU3QZa&format=png&color=000000" width="70" height="70">
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTmD38KsMgEwahtWc_Nfs5ZVktP9dBc36MUZA&s" width="70" height="60">
 
