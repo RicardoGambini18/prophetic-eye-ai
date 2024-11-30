@@ -49,6 +49,10 @@ def generate_experience_units_controller():
 def generate_client_requirements_controller():
   return generate_client_requirements()
 
+@app.post("/api/generate-requirement-units")
+def generate_requirement_units_controller():
+  return generate_experience_units()
+
 if __name__ == '__main__':
   app.run(
     debug=True,
