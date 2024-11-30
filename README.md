@@ -1,13 +1,13 @@
 <p align="center">
-  <img src="public/logo/logo-white.svg" alt="Descripción de la imagen" width="500">
+  <img src="./public/logo/logo-white.svg" alt="Descripción de la imagen" width="500">
 </p>
 
 <details>
   <summary>Table of contents</summary>
 
- - [About Prophetic Eye](#about-prophetic-eye)
+  - [About Prophetic Eye](#about-prophetic-eye)
   - [How to run it?](#how-to-run-it)
-  - [Whats is happening behind?](#whats-is-happening-behind?)
+  - [What is happening behind?](#what-is-happening-behind?)
   - [Built in](#built-in)
 </details>
 
