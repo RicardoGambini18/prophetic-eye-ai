@@ -5,6 +5,7 @@ from dotenv import load_dotenv
 from controllers.generate_team_members import generate_team_members
 from controllers.generate_tech_stacks import generate_tech_stacks
 from controllers.generate_team_member_experiences import generate_team_member_experiences
+from controllers.generate_experience_units import generate_experience_units
 
 load_dotenv()
 
@@ -30,6 +31,11 @@ def generate_tech_stacks_controller():
 @app.post("/api/generate-team-member-experiences")
 def generate_team_member_experiences_controller():
   return generate_team_member_experiences()
+
+
+@app.post("/api/generate-experience-units")
+def generate_experience_units_controller():
+  return generate_experience_units()
 
 
 if __name__ == '__main__':
