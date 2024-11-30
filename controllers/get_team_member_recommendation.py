@@ -5,6 +5,7 @@ from utils.get_requirement_units import get_requirement_units
 from utils.get_tech_stack_weights import get_tech_stack_weights
 from utils.get_requirement_units_embeddings import get_requirement_units_embeddings
 from utils.get_team_member_score import get_team_member_score
+from utils.get_best_team_member_fit import get_best_team_member_fit
 
 TEAM_MEMBERS_DATASET_PATH = "generated/team-members.json"
 
@@ -55,4 +56,7 @@ def get_team_member_recommendation():
   sorted_team_members = heapq.nlargest(
     8, team_members_with_score, key=lambda x: x['score'])
 
-  return jsonify(sorted_team_members)
+  team_member_recommendation = get_best_team_member_fit(
+    client_requirements, sorted_team_members)
+
+  return jsonify(team_member_recommendation)
