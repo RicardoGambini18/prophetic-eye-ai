@@ -8,6 +8,7 @@ from controllers.generate_team_member_experiences import generate_team_member_ex
 from controllers.generate_experience_units import generate_experience_units
 from controllers.generate_experience_units import generate_experience_units
 from controllers.generate_client_requirements import generate_client_requirements
+from controllers.generate_tech_stacks_weighs import generate_tech_stack_weights
 
 load_dotenv()
 
@@ -52,6 +53,10 @@ def generate_client_requirements_controller():
 @app.post("/api/generate-requirement-units")
 def generate_requirement_units_controller():
   return generate_experience_units()
+
+@app.post("/api/generate-tech-stack-weights")
+def generate_tech_stack_weights_controller():
+  return generate_tech_stack_weights()
 
 if __name__ == '__main__':
   app.run(
