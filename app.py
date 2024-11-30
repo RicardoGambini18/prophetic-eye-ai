@@ -70,12 +70,12 @@ def get_projects_controller():
   return get_projects()
 
 
-@app.get("/api/get-team-member-experience-units")
+@app.post("/api/get-team-member-experience-units")
 def get_team_member_experience_units_controller():
   return get_team_member_experience_units()
 
 
-@app.get("/api/get-team-member-recommendation")
+@app.post("/api/get-team-member-recommendation")
 def get_team_member_recommendation_controller():
   return get_team_member_recommendation()
 
