@@ -1,0 +1,81 @@
+[
+  {
+    "name": "Javascript",
+    "tech_stacks": [
+      "ReactJS",
+      "AngularJS",
+      "VueJS",
+      "Remix",
+      "NextJS",
+      "Astro",
+      "NuxtJS",
+      "NestJS",
+      "ExpressJS",
+      "Electron",
+      "React Native"
+    ]
+  },
+  {
+    "name": "Python",
+    "tech_stacks": [
+      "Django",
+      "Flask",
+      "Pandas",
+      "NumPy",
+      "SciPy",
+      "TensorFlow",
+      "PyTorch",
+      "scikit-learn"
+    ]
+  },
+  {
+    "name": "Ruby",
+    "tech_stacks": [
+      "Ruby on Rails",
+      "Sinatra"
+    ]
+  },
+  {
+    "name": "Dart",
+    "tech_stacks": [
+      "Aqueduct",
+      "Flutter"
+    ]
+  },
+  {
+    "name": "Swift",
+    "tech_stacks": [
+      "Vapor",
+      "Native iOS Development"
+    ]
+  },
+  {
+    "name": "Kotlin",
+    "tech_stacks": [
+      "Ktor",
+      "Native Android Development"
+    ]
+  },
+  {
+    "name": "Go",
+    "tech_stacks": [
+      "Gin",
+      "Echo"
+    ]
+  },
+  {
+    "name": "C#",
+    "tech_stacks": [
+      ".NET",
+      "ASP.NET Core",
+      "Unity"
+    ]
+  },
+  {
+    "name": "C++",
+    "tech_stacks": [
+      "wxWidgets",
+      "Unreal Engine"
+    ]
+  }
+]

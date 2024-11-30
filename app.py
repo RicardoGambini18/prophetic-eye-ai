@@ -9,6 +9,7 @@ from controllers.generate_experience_units import generate_experience_units
 from controllers.generate_experience_units_embeddings import generate_experience_units_embeddings
 from controllers.generate_client_requirements import generate_client_requirements
 from controllers.generate_requirement_units import generate_requirement_units
+from controllers.get_team_members import get_team_members
 
 load_dotenv()
 
@@ -54,6 +55,11 @@ def generate_client_requirements_controller():
 @app.post("/api/generate-requirement-units")
 def generate_requirement_units_controller():
   return generate_requirement_units()
+
+
+@app.get("/api/get-team-members")
+def get_team_members_controller():
+  return get_team_members()
 
 
 if __name__ == '__main__':
