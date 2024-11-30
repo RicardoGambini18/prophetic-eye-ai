@@ -14,8 +14,9 @@ def get_client_requirements_prompt():
   * Include a detailed functionality and the exactly techstack used for it (only one per functionalitie).
   * The selected techstack must strictly be inside this provided list: {tech_stack_formatted}.
   * Each techstack can appear multiple times but in different functionalities.
+  * The functionalities and techstack must be acoorded to the project
   
-  You should return a JSON text contained in a sigle element (one paragraph) cointaining the mutiples vi
+  You should return a JSON text contained in a sigle element (one paragraph) cointaining the mutiples requirements
   """
   
 def generate_client_requirements():
