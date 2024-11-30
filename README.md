@@ -7,8 +7,8 @@
 
  - [About Prophetic Eye](#about-prophetic-eye)
   - [How to run it?](#how-to-run-it)
-  - [Whats is happening behind?](#whats-is-happening-behind)
-  - [Technologies](#technologies)
+  - [Whats is happening behind?](#whats-is-happening-behind?)
+  - [Built in](#built-in)
 </details>
 
 
@@ -38,9 +38,9 @@
 
 The project involves gathering information about the client, specifically about their project. Then, a Ravn team member will fill out a short form where they can add one or multiple projects, providing descriptions of what they did and used in those projects, including the technologies, their level of English, their background, and their communication skills.
 
-This data is sent to the backend, where we have utilized OpenAI’s service for data mapping. This allows for a detailed analysis of which team member is best suited to participate in the project and why. A carefully selected top list is presented based on performance and technical compatibility, enabling the partner to quickly choose the right person for the job.
+This data is sent to the backend, where we have utilized OpenAI’s service for data mapping, specifically leveraging ChatGPT Completion and ChatGPT Embeddings. This enables a detailed analysis of which team member is best suited to participate in the project and why. A carefully selected top list is presented based on performance and technical compatibility, enabling the partner to quickly choose the right person for the job.
 
-# <ins>Built in:</ins>
+# <ins>Built in</ins>
 
 <img src="https://img.icons8.com/?size=100&id=13441&format=png&color=000000" width="70" height="70">
 <img src="https://img.icons8.com/?size=100&id=ka3InxFU3QZa&format=png&color=000000" width="70" height="70">
