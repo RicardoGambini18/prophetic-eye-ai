@@ -7,6 +7,7 @@ from controllers.generate_tech_stacks import generate_tech_stacks
 from controllers.generate_team_member_experiences import generate_team_member_experiences
 from controllers.generate_experience_units import generate_experience_units
 from controllers.generate_experience_units_embeddings import generate_experience_units_embeddings
+from controllers.generate_client_requirements import generate_client_requirements
 
 load_dotenv()
 
@@ -42,6 +43,11 @@ def generate_experience_units_controller():
 @app.post("/api/generate-experience-units-embeddings")
 def generate_experience_units_embeddings_controller():
   return generate_experience_units_embeddings()
+
+
+@app.post("/api/generate-client-requirements")
+def generate_client_requirements_controller():
+  return generate_client_requirements()
 
 
 if __name__ == '__main__':
