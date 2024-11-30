@@ -1,5 +1,5 @@
 import json
-from flask import jsonify, request
+from flask import jsonify
 from utils.convert_enum_to_list import convert_enum_to_list
 from constants.tech_stack import TechStack
 from utils.openai_client import openai_client
@@ -68,6 +68,7 @@ def generate_experience_units():
 
     team_member["projects"] = projects
     team_members_with_experience_units.append(team_member)
+    print(f"Finished team member {team_member["name"]}")
 
   with open(TEAM_MEMBERS_DATASET_PATH, 'w', encoding='utf-8') as f:
     json.dump(team_members_with_experience_units,
